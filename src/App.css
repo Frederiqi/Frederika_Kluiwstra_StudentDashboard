@@ -1,9 +1,34 @@
-.App {
-  text-align: center;
+.container {
+  height: 96vh;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-areas: 
+      "h h h h h h h h h h"
+      "n m m m m m m m m m"
+      "n m m m m m m m m m";
+}
+
+.header{
+  grid-area: h;
+  background-color: lightseagreen;
+}
+
+.nav {
+  grid-area: n;
+  background-color: lightseagreen;
+}
+
+.main {
+  grid-area: m;
+  background-color: white;
+}
+
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -13,21 +38,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +45,88 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: lightseagreen;
+  font-size: 20px;
+  padding: 10px;
+}
+
+ul li{
+  color: white;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+ul li:hover{
+  color: teal;
+}
+
+.page{
+  padding-top: 5px;
+}
+
+h1{
+  color: teal;
+  font-size: 30px;
+}
+
+p{
+  color: teal;
+  font-size: 18px;
+}
+
+.button{
+  margin: 10px 40px;
+}
+
+input[type=button]{
+  background-color:lightseagreen;
+  font-size: 16px;
+  border: 3px solid;
+  border-color:  lightseagreen;
+  border-radius: 10px;
+  margin: 0px 10px;
+  color: white;
+}
+
+input[type=button]:hover{
+  color: teal;  
+}
+
+.legendGraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.labelDifficulty {
+  font-size: 16px;
+  border: 3px solid coral;
+  background-color: coral;
+  border-radius: 10px;
+  padding: 0px 15px;
+  margin: 20px 10px;
+  color: white;
+}
+
+.labelFunfactor {
+  font-size: 16px;
+  border: 3px solid cadetblue;
+  background-color: cadetblue;
+  border-radius: 10px;
+  padding: 0px 15px;
+  margin: 20px 10px;
+  color: white;
 }
